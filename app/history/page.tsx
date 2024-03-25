@@ -3,7 +3,6 @@ import {useRouter} from "next/navigation";
 import Link from "next/link";
 
 const Page = () => {
-    const router = useRouter()
     let photos = Array.from({length: 6}, (_, i) => i + 1);
     return <div className="fixed inset-0 flex flex-col items-center justify-center gap-4">
         {photos.map((id) => (
