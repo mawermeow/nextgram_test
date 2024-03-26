@@ -5,7 +5,7 @@ export default function Page() {
     return (
       <section className="cards-container">
         {photos.map((id) => (
-          <Link className="card hover:scale-110 active:scale-100 transition-all" key={id} href={`/photos/${id}`} passHref>
+          <Link className="card hover:scale-110 active:scale-100 transition-all select-none" key={id} href={`/photos/${id}`} passHref>
             {id}
           </Link>
         ))}
